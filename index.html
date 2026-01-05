@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Noto+Sans+JP&family=Noto+Sans+Symbols&family=Roboto+Mono&display=swap" as="style" onload="this.rel='stylesheet'">
+  <title>Glyph Dither 3D Demo</title>
+  <style>
+    html, body { margin: 0; padding: 0; overflow: hidden; height: 100%; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+<select id="fontSelect" style="position: fixed; top: 16px; left: 16px; z-index: 10;">
+  <!-- JSで自動生成されるので中身は空でOK -->
+</select>
+
+  <canvas id="webgl"></canvas>
+
+  <!-- Vite or module import用 -->
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
