@@ -141,8 +141,8 @@ const glyphMaterial = new THREE.ShaderMaterial({
 
 // === モデル読み込み ===
 let model;
-const loader = new OBJLoader();
-loader.load('model.obj', obj => {
+const base = import.meta.env.BASE_URL;
+loader.load(`${base}model.obj`, (obj) => {
   obj.traverse(child => {
     if (child.isMesh) {
       child.material = glyphMaterial;
