@@ -12,6 +12,8 @@ const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('webg
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 
+const objLoader = new OBJLoader();
+
 // === ライト ===
 const light = new THREE.DirectionalLight(0xffffff, 0.6);
 light.position.set(2, 3, 1);
